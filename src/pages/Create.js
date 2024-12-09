@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import array from "./array";
+import array from "./Array";
 import { v4 as uuid } from "uuid";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -27,7 +27,7 @@ function Create() {
         // pushing to javascript object
         let a = name,
             b = age;
-        if (name == "" || age == "") {
+        if (name === "" || age === "") {
             alert("invalid input");
             return;
         }
@@ -82,7 +82,7 @@ function Create() {
                     variant="primary"
                     type="submit"
                 >
-                    Submit
+                    Add User
                 </Button>
 
                 {/* Redirecting back to home page */}

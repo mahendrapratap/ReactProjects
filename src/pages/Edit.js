@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import array from "./array";
+import array from "./Array";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -28,7 +28,7 @@ function Edit() {
     const handelSubmit = (e) => {
         // Preventing from reload
         e.preventDefault();
-        if (name == "" || age == "") {
+        if (name === "" || age === "") {
             alert("invalid input");
             return;
         }
@@ -100,7 +100,7 @@ function Edit() {
                     type="submit"
                     size="lg"
                 >
-                    Update
+                    Update User
                 </Button>
 
                 {/* Redirecting to main page after editing */}

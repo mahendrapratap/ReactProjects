@@ -2,7 +2,7 @@
 
 // Javascript object named array 
 // with 3 key-values
-const array = [
+const Array = [
     {
         id: "1",
         Name: "Shivansh",
@@ -20,4 +20,4 @@ const array = [
     },
 ];
 
-export default array;
+export default Array;
