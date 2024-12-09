@@ -3,7 +3,7 @@
 import React from "react";
 import { Button, Table } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import array from "./array";
+import array from "./Array";
 import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
