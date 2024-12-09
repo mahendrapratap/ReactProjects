@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import array from "./Array";
+import Array from "./Array";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -14,10 +14,10 @@ function Edit() {
     const [id, setid] = useState("");
 
     // Used for navigation with logic in javascript
-    let history = useNavigate();
+    let navigate = useNavigate();
 
     // Getting an index of an entry with an id
-    let index = array
+    let index = Array
         .map(function (e) {
             return e.id;
         })
@@ -34,7 +34,7 @@ function Edit() {
         }
 
         // Getting an index of an array
-        let a = array[index];
+        let a = Array[index];
 
         // Putting the value from the input
         // textfield and replacing it from
@@ -44,7 +44,7 @@ function Edit() {
       
 
         // Redirecting to main page
-        history("/");
+        navigate("/");
     };
 
     // Useeffect take care that page will
