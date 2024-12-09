@@ -7,7 +7,7 @@ import array from "./Array";
 import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
-    let history = useNavigate();
+    let navigate = useNavigate();
 
     // Function to set the ID, Name, and Age in local storage
     function setID(id, name, age) {
@@ -28,7 +28,7 @@ function Home() {
         array.splice(index, 1);
 
         // Redirecting to the same page to re-render
-        history("/");
+        navigate("/");
     }
 
     return (
